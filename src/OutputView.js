@@ -12,4 +12,9 @@ export default {
         MissionUtils.Console.print("<할인 전 총주문 금액>");
         MissionUtils.Console.print(`${discountAmount}원`);
     },
+
+    printGiftMenu(giftMenu) {
+        MissionUtils.Console.print("<증정 메뉴>");
+        MissionUtils.Console.print(`${giftMenu.menu} ${giftMenu.price}개`);
+    },
 }
