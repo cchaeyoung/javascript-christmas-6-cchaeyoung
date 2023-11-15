@@ -31,4 +31,9 @@ export default {
           }
         }
     },
+
+    printTotalBenefitAmount(totalBenefit) {
+        MissionUtils.Console.print("<총혜택 금액>");
+        MissionUtils.Console.print(`${totalBenefit}원`);
+    },
 }
