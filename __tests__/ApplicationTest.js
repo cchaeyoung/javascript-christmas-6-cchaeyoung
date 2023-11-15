@@ -63,7 +63,7 @@ describe("기능 테스트", () => {
     await app.run();
 
     // then
-    const expected = ["<혜택 내역>" + LINE_SEPARATOR + "없음"];
+    const expected = ["<혜택 내역>", "없음"];
 
     expectLogContains(getOutput(logSpy), expected);
   });
