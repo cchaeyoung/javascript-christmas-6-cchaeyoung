@@ -17,4 +17,18 @@ export default {
         MissionUtils.Console.print("<증정 메뉴>");
         MissionUtils.Console.print(`${giftMenu.menu} ${giftMenu.price}개`);
     },
+
+    printBenefitDetails(discountAmount, giftMenu) {
+        MissionUtils.Console.print("<혜택 내역>");
+        if (discountAmount === 0 && giftMenu.price === 0) {
+          MissionUtils.Console.print("없음");
+        } else {
+          if (discountAmount > 0) {
+            MissionUtils.Console.print(`할인: -${discountAmount}원`);
+          }
+          if (giftMenu.price > 0) {
+            MissionUtils.Console.print(`증정: ${giftMenu.menu} ${giftMenu.price}개`);
+          }
+        }
+    },
 }
