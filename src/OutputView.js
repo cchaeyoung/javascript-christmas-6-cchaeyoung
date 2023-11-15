@@ -41,4 +41,9 @@ export default {
         MissionUtils.Console.print("<할인 후 예상 결제 금액>");
         MissionUtils.Console.print(`${finalPayment}원`);
     },
+
+    printEventBadge(eventBadge) {
+        MissionUtils.Console.print("<12월 이벤트 배지>");
+        MissionUtils.Console.print(eventBadge);
+    },
 }
