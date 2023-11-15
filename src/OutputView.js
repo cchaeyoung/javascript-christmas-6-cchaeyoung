@@ -36,4 +36,9 @@ export default {
         MissionUtils.Console.print("<총혜택 금액>");
         MissionUtils.Console.print(`${totalBenefit}원`);
     },
+
+    printFinalPayment(finalPayment) {
+        MissionUtils.Console.print("<할인 후 예상 결제 금액>");
+        MissionUtils.Console.print(`${finalPayment}원`);
+    },
 }
